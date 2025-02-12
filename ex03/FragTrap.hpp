@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:05:43 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 14:37:56 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/12 17:40:32 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,15 @@
 class FragTrap : virtual public ClapTrap
 {
 	private :
+		static const int initial_hitpoints = 100;
+		static const int initial_energy = 100;
+		static const int initial_attack = 30;
 	public :
+
+		static int getInitialHitPoints() { return initial_hitpoints; }
+		static int getInitialEnergy() { return initial_energy; }
+		static int getInitialAttack() { return initial_attack; }
+
 		FragTrap();
 		~FragTrap();
 		FragTrap(std::string name);
