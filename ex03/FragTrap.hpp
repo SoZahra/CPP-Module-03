@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:05:43 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 17:40:32 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/25 16:04:03 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class FragTrap : virtual public ClapTrap
 		static int getInitialEnergy() { return initial_energy; }
 		static int getInitialAttack() { return initial_attack; }
 
-		FragTrap();
+		FragTrap(); 
 		~FragTrap();
 		FragTrap(std::string name);
 		FragTrap(const FragTrap &name);

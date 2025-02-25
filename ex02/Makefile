@@ -6,17 +6,17 @@
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/10 17:41:54 by fzayani           #+#    #+#              #
-#    Updated: 2025/02/12 11:48:59 by fzayani          ###   ########.fr        #
+#    Updated: 2025/02/12 14:00:35 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = scavtrap
+NAME = fragtrap
 
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 15:58:28 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 13:49:08 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/12 11:48:05 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 	ClapTrap::operator=(other);
 	return *this;
 }
+
 
 void ScavTrap::guardGate()
 {

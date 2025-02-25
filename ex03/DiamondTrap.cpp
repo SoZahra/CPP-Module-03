@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 14:27:33 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 17:42:24 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/25 16:14:16 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 DiamondTrap::DiamondTrap() :ClapTrap("_clap_name"), FragTrap(), ScavTrap()
 {
 	this->name = "";
-	// this->hit_points = FragTrap::hit_points;
-	// this->energy = ScavTrap::energy;
-	// this->attack_damage = FragTrap::attack_damage;
+
 	this->hit_points = FragTrap::getInitialHitPoints();
 	this->energy = ScavTrap::getInitialEnergy();
 	this->attack_damage = FragTrap::getInitialAttack();
@@ -32,9 +30,7 @@ DiamondTrap::~DiamondTrap()
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name)
 {
 	this->name = name;
-	// this->hit_points = FragTrap::hit_points;
-	// this->energy = ScavTrap::energy;
-	// this->attack_damage = FragTrap::attack_damage;
+
 	this->hit_points = FragTrap::getInitialHitPoints();
 	this->energy = ScavTrap::getInitialEnergy();
 	this->attack_damage = FragTrap::getInitialAttack();

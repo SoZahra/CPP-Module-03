@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 17:41:47 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/11 14:46:42 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/19 16:17:47 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ ClapTrap::ClapTrap()
 	this->hit_points = 10;
 	this->energy = 10;
 	this->attack_damage = 0;
-	std::cout << " Default constructor is called" << std::endl;
+	std::cout << "Default constructor is called" << std::endl;
 }
 
 int ClapTrap::get_hit_points()const

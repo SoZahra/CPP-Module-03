@@ -6,12 +6,13 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 17:41:51 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 11:39:25 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/12 14:07:27 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 #include "ClapTrap.hpp"
+#include "FragTrap.hpp"
 
 int main(void)
 {
@@ -30,10 +31,20 @@ int main(void)
     scav.beRepaired(10);        // Plus d'énergie
     scav.guardGate();           // Nouvelle fonction
 
+       // Test FragTrap
+    std::cout << "\n--- Testing FragTrap ---" << std::endl;
+    FragTrap frag("Frag");
+    frag.attack("Enemy");
+    frag.takeDamage(40);
+    frag.beRepaired(60);
+    frag.highFivesGuys();
+
     // Test de copie
     std::cout << "\n--- Testing Copy ---" << std::endl;
     ScavTrap scav2(scav);
     scav2.guardGate();
+    FragTrap frag2(frag);
+    frag2.highFivesGuys();
 
     return 0;
 }

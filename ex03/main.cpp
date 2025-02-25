@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 17:41:51 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/12 17:58:24 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/25 16:20:13 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,9 @@ int main(void)
 
 
     std::cout << "\n--- Testing DiamondTrap Stats ---" << std::endl;
-    std::cout << "Hit points: " << diamond.get_hit_points() << std::endl;
-    std::cout << "Energy: " << diamond.get_energy() << std::endl;
-    std::cout << "Attack damage: " << diamond.get_attack_damage() << std::endl;
+    std::cout << "Hit points from FragTrap : " << diamond.get_hit_points() << std::endl;
+    std::cout << "Energy from ScavTrap : " << diamond.get_energy() << std::endl;
+    std::cout << "Attack damage from FragTrap : " << diamond.get_attack_damage() << std::endl;
 
     diamond.attack("Enemy"); //herite de ScavTrap
     diamond.takeDamage(30); //herite de ClapTrap
